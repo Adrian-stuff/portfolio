@@ -40,9 +40,17 @@ export default function Portfolio({ posts }) {
   }
 
   return (
-    <Container title={title} description={description}>
+    <Container title={title} description={description} showNav={false}>
         
-        <div className="mb-24 md:mb-32">
+        <div className="mb-24 md:mb-32 pt-12 md:pt-16">
+           <motion.h1 
+             initial={{ opacity: 0, y: -20 }}
+             animate={{ opacity: 1, y: 0 }}
+             transition={{ duration: 0.8, ease: "easeOut" }}
+             className="text-4xl md:text-6xl font-light tracking-tight mb-6"
+           >
+             {author}
+           </motion.h1>
            <p className="text-xl md:text-2xl text-neutral-500 max-w-2xl font-light leading-relaxed mt-8">
             {description}
           </p>

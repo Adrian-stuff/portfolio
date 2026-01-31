@@ -5,7 +5,7 @@ import Head from 'next/head'
 import PropTypes from 'prop-types'
 import cn from 'classnames'
 
-const Container = ({ children, layout, fullWidth, navItems, ...customMeta }) => {
+const Container = ({ children, layout, fullWidth, showNav = true, ...customMeta }) => {
   const BLOG = useConfig()
 
   const url = BLOG.path.length ? `${BLOG.link}/${BLOG.path}` : BLOG.link
@@ -68,7 +68,7 @@ const Container = ({ children, layout, fullWidth, navItems, ...customMeta }) => 
         'max-w-4xl mx-auto px-6',
         layout !== 'blog' && ['py-12']
       )}>
-        <PortfolioHeader />
+        {showNav && <PortfolioHeader />}
         
         <div className="mt-8 md:mt-12">
           {children}
