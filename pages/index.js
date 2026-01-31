@@ -51,9 +51,17 @@ export default function Portfolio({ posts }) {
            >
              {author}
            </motion.h1>
-           <p className="text-xl md:text-2xl text-neutral-500 max-w-2xl font-light leading-relaxed mt-8">
-            {description}
+          <p className="text-xl md:text-2xl text-neutral-500 max-w-2xl font-light leading-relaxed mt-8">
+            I am the Lead Developer at <a href="https://hoacentralph.com" className='underline' target="_blank" rel="noopener noreferrer"> hoacentralph.com </a>, specializing in building scalable web applications using Typescript, Next.js, Tailwind, and Supabase. I have architected and delivered numerous bespoke software solutions for small businesses and have extensive experience in designing robust system infrastructures. Currently, I am developing a scalable SaaS platform for Homeowners Associations.
           </p>
+
+          <div className="mt-8">
+            <Link href="/about" legacyBehavior>
+              <a className="inline-block bg-neutral-900 text-white px-6 py-3 rounded-full font-medium hover:bg-neutral-800 transition-colors">
+                About Me
+              </a>
+            </Link>
+          </div>
             
             <div className="flex gap-6 mt-8 text-neutral-400">
             <a href="mailto:deveraadrian46@gmail.com" className="hover:text-neutral-900 transition-colors">
@@ -95,7 +103,7 @@ export default function Portfolio({ posts }) {
                       
                       <div className="flex items-center gap-2 text-neutral-400 shrink-0">
                         <span className="text-sm font-light italic">
-                           {new Date(post.date?.start_date || post.createdTime).toLocaleDateString('en-US', { year: 'numeric', month: 'long' })}
+                           {new Date(post.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long' })}
                         </span>
                         <ArrowUpRight size={18} className="opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300" />
                       </div>
