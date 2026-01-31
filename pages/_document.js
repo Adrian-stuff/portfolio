@@ -115,6 +115,7 @@ class MyDocument extends Document {
             }
           `}
           </style>
+          <meta name="google-site-verification" content="sJdKML_dOzMAWX_nvgRX_wnt5GotxAxwsY9Zk9F9Nb0" />
         </Head>
         <body className="bg-day dark:bg-night">
           <Main />
