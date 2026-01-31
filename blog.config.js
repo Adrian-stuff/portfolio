@@ -2,7 +2,7 @@ const BLOG = {
   title: 'Adrian De Vera',
   author: 'Adrian De Vera',
   email: 'email@gmail.com', // TODO: Update if user provides
-  link: 'https://adrian-de-vera.vercel.app', // Placeholder until real domain
+  link: 'https://adrian-stuff.vercel.app', // Placeholder until real domain
   description: 'Minimalist Portfolio of Adrian De Vera.',
   lang: 'en-US', // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES']
   timezone: 'Asia/Shanghai', // Your Notion posts' date will be interpreted as this timezone.
