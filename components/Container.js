@@ -1,10 +1,9 @@
-import LandingNavbar from '@/components/LandingNavbar'
+import PortfolioHeader from '@/components/PortfolioHeader'
 import Footer from '@/components/Footer'
 import { useConfig } from '@/lib/config'
 import Head from 'next/head'
 import PropTypes from 'prop-types'
 import cn from 'classnames'
-// import BlogPost from './BlogPost'
 
 const Container = ({ children, layout, fullWidth, navItems, ...customMeta }) => {
   const BLOG = useConfig()
@@ -16,10 +15,9 @@ const Container = ({ children, layout, fullWidth, navItems, ...customMeta }) => 
     ...customMeta
   }
   return (
-    <div>
+    <div className="bg-neutral-50 min-h-screen text-neutral-900 font-sans selection:bg-neutral-200">
       <Head>
         <title>{meta.title}</title>
-        {/* <meta content={BLOG.darkBackground} name="theme-color" /> */}
         <meta name="robots" content="follow, index" />
         <meta charSet="UTF-8" />
         {BLOG.seo.googleSiteVerification && (
@@ -65,19 +63,19 @@ const Container = ({ children, layout, fullWidth, navItems, ...customMeta }) => 
           </>
         )}
       </Head>
-      <div
-        className={`wrapper ${BLOG.font === 'serif' ? 'font-serif' : 'font-sans'
-          }`}
-      >
-        <LandingNavbar navItems={navItems} />
-        <main className={cn(
-          'flex-grow transition-all pt-24', /* Added pt-24 for fixed navbar */
-          layout !== 'blog' && ['self-center px-4', fullWidth ? 'md:px-24' : 'w-full max-w-2xl']
-        )}>
+      
+      <main className={cn(
+        'max-w-4xl mx-auto px-6',
+        layout !== 'blog' && ['py-12']
+      )}>
+        <PortfolioHeader />
+        
+        <div className="mt-8 md:mt-12">
           {children}
-        </main>
-        <Footer fullWidth={fullWidth} />
-      </div>
+        </div>
+        
+        <Footer fullWidth={fullWidth} className="mt-24 pt-8 border-t border-neutral-200" />
+      </main>
     </div>
   )
 }

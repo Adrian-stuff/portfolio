@@ -38,7 +38,7 @@ export default function Post (props) {
           animate={{ y: 0 }}
           transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }} 
           className={cn(
-            'w-full font-black text-4xl md:text-6xl text-black dark:text-white leading-tight tracking-tight mb-4',
+            'w-full font-light text-4xl md:text-6xl text-neutral-900 leading-tight tracking-tight mb-4',
             { 'max-w-2xl px-4': !fullWidth }
           )}
         >
@@ -51,22 +51,15 @@ export default function Post (props) {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3, duration: 0.5 }}
           className={cn(
-            'w-full flex mt-4 items-start text-gray-500 dark:text-gray-400',
+            'w-full flex mt-4 items-start text-neutral-500',
             { 'max-w-2xl px-4': !fullWidth }
           )}
         >
           <div className="flex mb-4">
-            <a href={BLOG.socialLink || '#'} className="flex">
-              <Image
-                alt={BLOG.author}
-                width={24}
-                height={24}
-                src={`https://gravatar.com/avatar/${emailHash}`}
-                className="rounded-full"
-              />
-              <p className="ml-2 md:block">{BLOG.author}</p>
+            <a href={BLOG.socialLink || '#'} className="flex items-center hover:text-neutral-900 transition-colors">
+              <span className="block font-medium">{BLOG.author}</span>
             </a>
-            <span className="block">&nbsp;/&nbsp;</span>
+            <span className="block mx-2">·</span>
           </div>
           <div className="mr-2 mb-4 md:ml-0">
             <FormattedDate date={post.date} />
