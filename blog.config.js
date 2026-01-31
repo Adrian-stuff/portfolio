@@ -1,5 +1,5 @@
 const BLOG = {
-  title: 'Adrian De Vera',
+  title: 'Adrian De Vera - Portfolio',
   author: 'Adrian De Vera',
   email: 'deveraadrian46@gmail.com', // TODO: Update if user provides
   link: 'https://adriandevera.vercel.app',
