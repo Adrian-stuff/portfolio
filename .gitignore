@@ -39,3 +39,5 @@ public/robots.txt
 public/sitemap.xml
 .env*.local
 .env
+
+llm.md
