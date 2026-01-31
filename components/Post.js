@@ -81,7 +81,7 @@ export default function Post (props) {
       >
         {!fullWidth && <div className="flex-1 hidden lg:block" />}
         <div className={fullWidth ? 'flex-1 pr-4' : 'flex-none w-full max-w-2xl px-4'}>
-          <NotionRenderer recordMap={blockMap} fullPage={false} darkMode={dark} />
+          <NotionRenderer recordMap={blockMap} fullPage={false} darkMode={false} />
         </div>
         <div className={cn('order-first lg:order-[unset] w-full lg:w-auto max-w-2xl lg:max-w-[unset] lg:min-w-[160px]', fullWidth ? 'flex-none' : 'flex-1')}>
           {/* `65px` is the height of expanded nav */}

@@ -26,29 +26,7 @@
   --notion-red_background: rgb(253, 235, 236);
 }
 
-:root.dark {
-  /* Notion colors */
-
-  --notion-gray: rgb(155, 155, 155);
-  --notion-brown: rgb(186, 133, 111);
-  --notion-orange: rgb(199, 125, 72);
-  --notion-yellow: rgb(202, 152, 73);
-  --notion-teal: rgb(82, 158, 114);
-  --notion-blue: rgb(94, 135, 201);
-  --notion-purple: rgb(157, 104, 211);
-  --notion-pink: rgb(209, 87, 150);
-  --notion-red: rgb(223, 84, 82);
-
-  --notion-gray_background: rgb(47, 47, 47);
-  --notion-brown_background: rgb(74, 50, 40);
-  --notion-orange_background: rgb(92, 59, 35);
-  --notion-yellow_background: rgb(86, 67, 40);
-  --notion-teal_background: rgb(36, 61, 48);
-  --notion-blue_background: rgb(20, 58, 78);
-  --notion-purple_background: rgb(60, 45, 73);
-  --notion-pink_background: rgb(78, 44, 60);
-  --notion-red_background: rgb(82, 46, 42);
-}
+/* Dark mode variables removed */
 
 .notion {
   @apply text-gray-600 dark:text-gray-300;

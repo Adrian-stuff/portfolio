@@ -11,8 +11,7 @@ const Footer = ({ fullWidth, className }) => {
   return (
     <div
       className={cn(
-        'mt-6 flex-shrink-0 m-auto w-full text-gray-500 dark:text-gray-400 transition-all',
-        !fullWidth ? 'max-w-2xl px-4' : 'px-4 md:px-24',
+        'mt-6 flex-shrink-0 m-auto w-full text-neutral-500 transition-all',
         className
       )}
     >
@@ -20,7 +19,7 @@ const Footer = ({ fullWidth, className }) => {
       <div className="my-4 text-sm leading-6">
         <div className="flex align-baseline justify-between flex-wrap">
           <p>
-            © {BLOG.author} {from === y || !from ? y : `${from} - ${y}`}
+            © {BLOG.author} - {y}
           </p>
           <Vercel />
         </div>
