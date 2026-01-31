@@ -1,26 +1,26 @@
 const BLOG = {
-  title: 'BLOG',
-  author: 'Raffael Palma',
-  email: 'email@gmail.com',
-  link: 'https://blog-cms.vercel.app',
-  description: 'This gonna be an awesome website.',
+  title: 'Adrian De Vera',
+  author: 'Adrian De Vera',
+  email: 'email@gmail.com', // TODO: Update if user provides
+  link: 'https://adrian-de-vera.vercel.app', // Placeholder until real domain
+  description: 'Minimalist Portfolio of Adrian De Vera.',
   lang: 'en-US', // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES']
-  timezone: 'Asia/Shanghai', // Your Notion posts' date will be interpreted as this timezone. See https://en.wikipedia.org/wiki/List_of_tz_database_time_zones for all options.
+  timezone: 'Asia/Shanghai', // Your Notion posts' date will be interpreted as this timezone.
   appearance: 'auto', // ['light', 'dark', 'auto'],
   font: 'sans-serif', // ['sans-serif', 'serif']
   lightBackground: '#ffffff', // use hex value, don't forget '#' e.g #fffefc
   darkBackground: '#18181B', // use hex value, don't forget '#'
   path: '', // leave this empty unless you want to deploy Nobelium in a folder
-  since: '', // If leave this empty, current year will be used.
+  since: '2024', // If leave this empty, current year will be used.
   postsPerPage: 7,
-  sortByDate: false,
+  sortByDate: true,
   showAbout: true,
   showArchive: true,
   autoCollapsedNavBar: false, // The automatically collapsed navigation bar
   ogImageGenerateURL: 'https://og-image-craigary.vercel.app', // The link to generate OG image, don't end with a slash
   socialLink: '',
   seo: {
-    keywords: ['Blog', 'Website', 'Notion'],
+    keywords: ['Portfolio', 'Design', 'Adrian De Vera', 'Notion'],
     googleSiteVerification: '' // Remove the value or replace it with your own google site verification code
   },
   notionPageId: process.env.NOTION_PAGE_ID, // DO NOT CHANGE THIS！！！
