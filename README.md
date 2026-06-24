@@ -1,38 +1,44 @@
 # Adrian DeVera — Portfolio
 
-A minimalist, high-performance portfolio and blog built with Next.js, Notion, and Tailwind CSS.
+Personal portfolio and blog built with Next.js and Notion as a CMS.
 
-🔗 **Live:** [portfolio-olive-eta-18.vercel.app](https://portfolio-olive-eta-18.vercel.app)
+🔗 **Live:** [adriandevera.vercel.app](https://adriandevera.vercel.app)
 
 ---
 
 ## Overview
 
-This project serves as my personal portfolio and blog. It leverages Notion as a CMS, allowing for easy content management, while Next.js ensures static site generation and optimal performance.
+This portfolio uses Notion as a headless CMS — content is written in Notion and published instantly to the site via `react-notion-x`. Next.js handles static site generation for fast load times and SEO.
 
 ## Tech Stack
 
-- **Framework:** [Next.js](https://nextjs.org/)
-- **CMS:** [Notion](https://www.notion.so/) (via `react-notion-x`)
-- **Styling:** [Tailwind CSS](https://tailwindcss.com/)
-- **Deployment:** [Vercel](https://vercel.com/)
+- **Framework:** Next.js
+- **CMS:** Notion (via react-notion-x)
+- **Styling:** Tailwind CSS
+- **Deployment:** Vercel
 
 ## Features
 
-- ⚡ **Fast & Responsive:** Statically generated pages for speed and SEO.
-- 📝 **Notion as CMS:** Write posts and pages in Notion, publish instantly.
-- 🎨 **Minimalist Design:** Clean aesthetics focusing on content.
-- 🌙 **Dark Mode:** Automatic or user-toggled dark mode support.
-- 🌐 **SEO Optimized:** Open Graph tags, sitemap generation, and semantic HTML.
+- ⚡ Statically generated pages for speed and SEO
+- 📝 Notion as CMS — write in Notion, publish instantly
+- 🌙 Dark mode support
+- 🌐 SEO optimized — Open Graph tags, sitemap, semantic HTML
 
 ## Getting Started
 
-1. Clone the repository.
-2. Install dependencies: `bun install`
-3. Set up environment variables (see `.env.example`).
-4. Run the development server: `bun dev`
+```bash
+git clone https://github.com/Adrian-stuff/portfolio.git
+cd portfolio
+bun install
+```
 
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Copy `.env.example` to `.env` and fill in your Notion config, then:
+
+```bash
+bun dev
+```
+
+Open [http://localhost:3000](http://localhost:3000).
 
 ## License
 
