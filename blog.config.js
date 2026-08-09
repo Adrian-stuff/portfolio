@@ -3,7 +3,7 @@ const BLOG = {
   author: 'Adrian De Vera',
   email: 'deveraadrian46@gmail.com', // TODO: Update if user provides
   link: 'https://adriandevera.vercel.app',
-  description: 'Lead Developer specializing in scalable web applications with Next.js, TypeScript, and Supabase. View my projects and technical articles.',
+  description: 'Lead AI Systems & Full Stack Engineer specializing in scalable web applications and autonomous agentic workflows with Next.js, TypeScript, Supabase, and AI agents.',
   lang: 'en-US', // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES']
   timezone: 'Asia/Shanghai', // Your Notion posts' date will be interpreted as this timezone.
   appearance: 'light', // ['light', 'dark', 'auto'],
@@ -20,7 +20,7 @@ const BLOG = {
   ogImageGenerateURL: 'https://og-image-craigary.vercel.app', // The link to generate OG image, don't end with a slash
   socialLink: '',
   seo: {
-    keywords: ['Adrian De Vera', 'Lead Developer', 'Full Stack Developer', 'Web Development', 'Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Supabase', 'Portfolio'],
+    keywords: ['Adrian De Vera', 'Lead AI Systems Engineer', 'Agentic Workflows', 'Full Stack Developer', 'AI Agents', 'Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Supabase', 'Portfolio'],
     googleSiteVerification: 'sJdKML_dOzMAWX_nvgRX_wnt5GotxAxwsY9Zk9F9Nb0' // Remove the value or replace it with your own google site verification code
   },
   notionPageId: process.env.NOTION_PAGE_ID, // DO NOT CHANGE THIS！！！

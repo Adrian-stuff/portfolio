@@ -52,7 +52,7 @@ export default function Portfolio({ posts }) {
              {author}
            </motion.h1>
           <p className="text-xl md:text-2xl text-neutral-500 max-w-2xl font-light leading-relaxed mt-8">
-            I am the Lead Developer at <a href="https://hoacentralph.com" className='underline' target="_blank" rel="noopener noreferrer"> hoacentralph.com </a>, specializing in building scalable web applications using Typescript, Next.js, Tailwind, and Supabase. I have architected and delivered numerous bespoke software solutions for small businesses and have extensive experience in designing robust system infrastructures. Currently, I am developing a scalable SaaS platform for Homeowners Associations.
+            I am the Lead Developer at <a href="https://hoacentralph.com" className='underline' target="_blank" rel="noopener noreferrer"> hoacentralph.com </a> and an AI Systems Engineer, specializing in building scalable web applications and autonomous agentic workflows using TypeScript, Next.js, Supabase, and AI model orchestration. I architect bespoke software solutions, design robust system infrastructures, and build multi-agent automation systems.
           </p>
 
           <div className="mt-8">
